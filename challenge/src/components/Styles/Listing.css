@@ -1,0 +1,151 @@
+/* src/components/Listing/Listing.css */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20;
+   
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  
+  .gender-filter {
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .user-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  /* .user-thumbnail {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 16px;
+  } */
+  
+  /* .user-details {
+    flex: 1;
+  } */
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  .pagination-button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .active {
+    background-color: #45a049;
+  }
+  
+  .pagination-button:hover {
+    background-color: #45a049;
+  }
+  .phone-icon {
+    display: flex;
+    align-items: center;
+    color: #333;
+  }
+  
+  .phone-icon svg {
+    margin-right: 4px;
+  }
+  .phone-icon:hover {
+    color: green;
+  }
+  .gender-icon {
+    display: inline-block;
+    margin-right: 4px;
+  }
+  .email-icon{
+    display: flex;
+    align-items: center;
+    color: #333;
+  }
+  
+  .email-icon:hover{
+    color: green;
+  }
+  .email-icon svg {
+    margin-right: 4px;
+  }
+  .user-thumbnail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .user-thumbnail {
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+    border-radius: 50%;
+    margin-bottom: 16px; /* Add margin to create space between image and details */
+    margin-right: 40px;
+  }
+  
+  .user-details {
+    text-align: left;
+   
+  }
+
+  .country-icon {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .country-flag {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    margin-right: 8px;
+  }
+
+
+  .user-thumbnail-container {
+    position: relative;
+  }
+  
+  .location-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  .google-map-link {
+    margin-top: 16px;
+    text-align: center;
+  }
