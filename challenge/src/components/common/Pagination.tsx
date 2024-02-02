@@ -1,5 +1,4 @@
-// Pagination.tsx
-import React from 'react';
+import React from "react";
 
 interface PaginationProps {
   itemsPerPage: number;
@@ -8,7 +7,12 @@ interface PaginationProps {
   currentPage: number;
 }
 
-const Pagination: React.FC<PaginationProps> = ({ itemsPerPage, totalItems, paginate, currentPage }) => {
+const Pagination: React.FC<PaginationProps> = ({
+  itemsPerPage,
+  totalItems,
+  paginate,
+  currentPage,
+}) => {
   const pageNumbers = [];
 
   for (let i = 1; i <= Math.ceil(totalItems / itemsPerPage); i++) {
@@ -19,7 +23,7 @@ const Pagination: React.FC<PaginationProps> = ({ itemsPerPage, totalItems, pagin
     <nav>
       <ul className="pagination">
         {pageNumbers.map((number) => (
-          <li key={number} className={number === currentPage ? 'active' : ''}>
+          <li key={number} className={number === currentPage ? "active" : ""}>
             <button onClick={() => paginate(number)}>{number}</button>
           </li>
         ))}

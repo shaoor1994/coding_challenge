@@ -32,11 +32,10 @@
 
 // export { usersReducer, selectedGenderReducer };
 
-
 // rootReducer.ts
-import { combineReducers } from 'redux';
-import { SET_USERS, SET_SELECTED_GENDER } from './actionTypes';
-import { User } from './types';
+import { combineReducers } from "redux";
+import { SET_USERS, SET_SELECTED_GENDER } from "./actionTypes";
+import { User } from "./types";
 
 interface SetUsersAction {
   type: typeof SET_USERS;
@@ -57,7 +56,10 @@ const usersReducer = (state: User[] = [], action: SetUsersAction): User[] => {
   }
 };
 
-const selectedGenderReducer = (state: string | null = null, action: SetSelectedGenderAction): string | null => {
+const selectedGenderReducer = (
+  state: string | null = null,
+  action: SetSelectedGenderAction
+): string | null => {
   switch (action.type) {
     case SET_SELECTED_GENDER:
       return action.payload;
